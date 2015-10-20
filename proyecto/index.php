@@ -1,9 +1,9 @@
 <?php
 
-	require_once 'Config/Autoload.php';
+	/*require_once 'Config/Autoload.php';
 	Config\Autoload::run();
 	$est = new Models\Estudiante();
-	$est->set('id', 1);
+	$est->set('id', 2);
 	$datos = $est->view();
-	print $datos->nombre;
+	print $datos->nombre;*/
 ?>
