@@ -20,6 +20,14 @@
 					call_user_func_array(array($controlador, $metodo), $argumento);
 				}
 			}
+
+			//Cargar vistas
+			$ruta = ROOT . 'Views' . DS . $request->getControlador() . DS . $request->getMetodo() . '.php';
+			if(is_readable($ruta)){
+				require_once $ruta;
+			}else{
+				print 'No se encontro la rura';
+			}
 		}
 	}
 ?>

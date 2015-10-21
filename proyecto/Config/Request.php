@@ -24,6 +24,9 @@
 					$this->metodo = 'index';
 				}
 				$this->argumento = $ruta;
+			}else{
+				$this->controlador = 'estudiantes';
+				$this->metodo = 'index';
 			}
 		}
 
