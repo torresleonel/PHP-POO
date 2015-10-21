@@ -15,6 +15,4 @@
 			return $datos;
 		}
 	}
-
-	$estudiantes = new estudiantesController();
 ?>

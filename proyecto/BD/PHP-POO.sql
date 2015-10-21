@@ -22,8 +22,8 @@ CREATE TABLE IF NOT EXISTS `estudiante` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci AUTO_INCREMENT=3 ;
 
 INSERT INTO `estudiante` (`id`, `nombre`, `edad`, `promedio`, `imagen`, `id_seccion`, `fecha`) VALUES
-(1, 'Leonel Torres', 26, 15, 'no tiene', 3, '2015-10-19 21:08:00'),
-(2, 'Juan Gonzales', 38, 18, 'Tampoco tiene', 1, '2015-10-19 21:09:00');
+(1, 'Leonel Torres', 26, 15, '1.png', 3, '2015-10-19 21:08:00'),
+(2, 'Juan Gonzales', 38, 18, '2.jpg', 1, '2015-10-19 21:09:00');
 
 CREATE TABLE IF NOT EXISTS `seccion` (
   `id` int(11) NOT NULL,

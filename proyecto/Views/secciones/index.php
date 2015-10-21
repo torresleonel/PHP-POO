@@ -1,8 +1,8 @@
 <div class="box-principal">
-	<h3 class="titulo">Listado de Estudiantes</h3>
+	<h3 class="titulo">Listado de Secciones</h3>
 	<div class="panel panel-success">
 		<div class="panel-heading">
-			<h3 class="panel-title">Listado de estudiantes</h3>
+			<h3 class="panel-title">Listado de Secciones</h3>
 		</div>
 		<div class="panel-body">
 			<table class="table table-striped table-hover">
@@ -10,9 +10,6 @@
 					<tr>
 						<th>ID</th>
 						<th>Nombre</th>
-						<th>Edad</th>
-						<th>Promedio</th>
-						<th>Imagen</th>
 						<th>Accion</th>
 					</tr>
 				</thead>
@@ -21,9 +18,6 @@
 							<tr>
 								<td><?=$row->id?></td>
 								<td><?=$row->nombre?></td>
-								<td><?=$row->edad?></td>
-								<td><?=$row->promedio?></td>
-								<td><img class="imagen-avatar" src="<?=URL?>Views/template/imagenes/avatars/<?=$row->imagen?>"></td>
 								<td>
 									<a class="btn btn-warning" href="<?=URL?>estudiantes/editar/<?=$row->id?>">Editar</a>
 									<a class="btn btn-danger" href="<?=URL?>estudiantes/eliminar/<?=$row->id?>">Eliminar</a>
