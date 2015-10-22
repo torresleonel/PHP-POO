@@ -9,9 +9,4 @@
 	require_once 'Views/template.php';
 	Config\Enrutador::run(new Config\Request());
 
-	/*
-	$est = new Models\Estudiante();
-	$est->set('id', 2);
-	$datos = $est->view();
-	print $datos->nombre;*/
 ?>
