@@ -23,5 +23,24 @@
 			}
 		}
 
+		public function editar($id){
+			if($_POST){
+				$this->secciones->set('id', $id);
+				$this->secciones->set('nombre', $_POST['nombre']);
+				$this->secciones->edit();
+				header('Location: ' . URL . 'secciones');
+			}else{
+				$this->secciones->set('id', $id);
+				$datos = $this->secciones->view();
+				return $datos;
+			}
+		}
+
+		public function eliminar($id){
+			$this->secciones->set('id', $id);
+			$this->secciones->delete();
+			header('Location: ' . URL . 'secciones');
+		}
+
 	}
 ?>

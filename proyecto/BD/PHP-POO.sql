@@ -19,26 +19,24 @@ CREATE TABLE IF NOT EXISTS `estudiante` (
   `fecha` datetime NOT NULL,
   PRIMARY KEY (`id`),
   KEY `id_seccion` (`id_seccion`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci AUTO_INCREMENT=5 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci AUTO_INCREMENT=3 ;
 
 INSERT INTO `estudiante` (`id`, `nombre`, `edad`, `promedio`, `imagen`, `id_seccion`, `fecha`) VALUES
 (1, 'Leonel Torres', 26, 15, '1.png', 3, '2015-10-19 21:08:00'),
-(2, 'Juan Gonzales', 38, 18, '2.jpg', 1, '2015-10-19 21:09:00'),
-(4, 'Codigo Facilito', 42, 52, '0922chica.jpeg', 2, '2015-10-21 22:39:22');
+(2, 'Juan Gonzales', 38, 18, '2.jpg', 1, '2015-10-19 21:09:00');
 
 CREATE TABLE IF NOT EXISTS `seccion` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `nombre` varchar(80) COLLATE utf8_spanish_ci NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci AUTO_INCREMENT=7 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci AUTO_INCREMENT=6 ;
 
 INSERT INTO `seccion` (`id`, `nombre`) VALUES
 (1, 'a'),
 (2, 'b'),
 (3, 'c'),
 (4, 'd'),
-(5, 'e'),
-(6, 'f');
+(5, 'e');
 
 
 ALTER TABLE `estudiante`

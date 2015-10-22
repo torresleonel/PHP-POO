@@ -36,7 +36,7 @@
 								<?php } ?>
 							</select>
 						</div>
-						<input value="<?=$datos->id?>" name="id" type="hidden" required>
+						<input value="<?=$datos->id?>" name="id" type="hidden">
 						<div class="form-group">
 							<button type="submit" class="btn btn-success">Editar</button>
 							<button type="reset" class="btn btn-warning">Borrar</button>

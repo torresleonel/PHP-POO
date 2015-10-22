@@ -24,7 +24,7 @@
 		}
 
 		public function add(){
-			$sql = "INSERT INTO seccion(id, nombre) VALUES(null, '{$this->nombre}')";
+			$sql = "INSERT INTO seccion(id, nombre) VALUES (null, '{$this->nombre}')";
 			$this->con->ejecutar($sql);
 		}
 
@@ -34,7 +34,7 @@
 		}
 
 		public function edit(){
-			$sql = "UPDATE FROM estudiante SET nombre = '{$this->nombre}' WHERE id = '{$this->id}'";
+			$sql = "UPDATE seccion SET nombre = '{$this->nombre}' WHERE id = '{$this->id}'";
 			$this->con->ejecutar($sql);
 		}
 

@@ -19,8 +19,8 @@
 								<td><?=$row->id?></td>
 								<td><?=$row->nombre?></td>
 								<td>
-									<a class="btn btn-warning" href="<?=URL?>estudiantes/editar/<?=$row->id?>">Editar</a>
-									<a class="btn btn-danger" href="<?=URL?>estudiantes/eliminar/<?=$row->id?>">Eliminar</a>
+									<a class="btn btn-warning" href="<?=URL?>secciones/editar/<?=$row->id?>">Editar</a>
+									<a class="btn btn-danger" href="<?=URL?>secciones/eliminar/<?=$row->id?>">Eliminar</a>
 								</td>
 							</tr>
 					<?php } ?>
