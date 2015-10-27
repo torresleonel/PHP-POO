@@ -26,7 +26,7 @@
 			if(is_readable($ruta)){
 				require_once $ruta;
 			}else{
-				print 'No se encontro la rura';
+				print 'No se encontro la ruta';
 			}
 		}
 	}
